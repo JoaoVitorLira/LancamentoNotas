@@ -55,3 +55,5 @@ function atualizarMedia() {
 
 // Chama a função para atualizar as médias assim que o DOM estiver carregado
 document.addEventListener('DOMContentLoaded', atualizarMedia);
+
+

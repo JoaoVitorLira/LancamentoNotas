@@ -441,12 +441,15 @@
                     <p>0,0</p>
                 </div>
             </div>
-
         </form>
         <section id="botoes">
             <div id="botaoInteracao">
-                <img src="icon/iconeEnviarExcel.png" class="iconeBotao" alt="">
-                <h2>Enviar Excel</h2>
+                <form id="formUpload" method="POST" enctype="multipart/form-data">
+                    <input type="file" id="inputExcel" name="file" accept=".xlsx" style="display: none;">
+                    <img src="icon/iconeEnviarExcel.png" class="iconeBotao" alt="">
+                    <h2>Enviar Excel</h2>
+                    <button type="submit" style="display:none;">Submit</button> <!-- Botão invisível para submissão -->
+                </form>
             </div>
 
             <div id="botaoInteracao">
@@ -460,7 +463,6 @@
             </div>
         </section>
     </main>
-
     <script src="lancamentoNotas.js"></script>
 </body>
 
